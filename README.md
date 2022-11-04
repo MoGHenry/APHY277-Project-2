@@ -1,7 +1,8 @@
 # Project-2-APHY277
 
-Members: Henry Qiu, Danny O'Rourke
-Due Date: 11/16/2022
+Members: `Henry Qiu`, `Danny O'Rourke`
+
+Due Date: `11/16/2022`
 
 
 ## game mode
