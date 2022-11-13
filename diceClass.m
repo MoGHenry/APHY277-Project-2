@@ -42,4 +42,3 @@ classdef diceClass
         end
     end
 end
-
