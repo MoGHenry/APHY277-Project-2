@@ -12,8 +12,7 @@ diceObj = diceClass(rolled);
 disp(diceObj.userPoint);
 % computer point will be hide
 disp(diceObj.computerPoint);
-% plot a random figure
-figure; plot(1);
+
 % let command window be active after plotting
 commandwindow();
 %%
@@ -29,7 +28,10 @@ while strcmp(input("Do you want to reroll?(y/n)\n: ", 's'), 'y')
 end
 %%
 disp(diceObj.computerPoint);
-sim = @(nside ndice) randi([1 nside], 1, ndice);
-
+NumRoll = 100000;
+sim = @(nside, NumRoll) randi([1 nside], 1, 100000);
+SimMatrx = sim(nside, NumRoll);
+figure();
+bar(SimMatrx, 100000);
 
 close;
