@@ -28,7 +28,8 @@ while strcmp(input("Do you want to reroll?(y/n)\n: ", 's'), 'y')
     commandwindow();
 end
 %%
-
+disp(diceObj.computerPoint);
+sim = @(nside ndice) randi([1 nside], 1, ndice);
 
 
 close;
