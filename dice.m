@@ -30,8 +30,5 @@ end
 disp(diceObj.computerPoint);
 NumRoll = 100000;
 sim = @(nside, NumRoll) randi([1 nside], 1, 100000);
-SimMatrx = sim(nside, NumRoll);
-figure();
-bar(SimMatrx, 100000);
 
-close;
+%bar(SimMatrx,10000);
