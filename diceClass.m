@@ -4,6 +4,7 @@ classdef diceClass
     
     properties
         nDice {mustBeNonzero}
+        nSides {mustBeNonzero}
         userPoint {mustBeNumeric}
         computerPoint {mustBeNumeric}
         userDice {mustBeNumeric}
@@ -15,6 +16,7 @@ classdef diceClass
             %DICECLASS Construct an instance of this class
             %   Detailed explanation goes here
             out.nDice = obj.nDice;
+            out.nSides = obj.nSides;
             out.userPoint = obj.userPoint;
             out.computerPoint = obj.computerPoint;
             out.userDice = obj.userDice;
@@ -22,7 +24,7 @@ classdef diceClass
         end
 
         function out = reroll(obj)
-            rerolled = roll(obj.nDice);
+            rerolled = roll(obj.nDice,obj.nSides);
 
             obj.userDice = rerolled.userDice;
             obj.userPoint = rerolled.userPoint;
